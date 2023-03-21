@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+Options +FollowSymLinks
+RewriteEngine On
+# Disable directory listing
+Options -Indexes
+# If the requested URL is not a directory
+RewriteCond %{SCRIPT_FILENAME} !-d
+# If the requested URL is not a file
+RewriteCond %{SCRIPT_FILENAME} !-f
+# Rewrite the URL to index.php
+RewriteRule ^.*$ ./index.php
+</IfModule>
