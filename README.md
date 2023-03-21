@@ -74,7 +74,7 @@ git clone https://github.com/petermuladi/cv-profile.git
   ServerName localhost:3030 </VirtualHost>
 
 ## Documentation
-- **Find in** -> **uml-diagrams** -> **📊UML diagrams**
+- **Find in** -> **uml-diagrams** folder -> **📊UML diagrams**
 - Deployment 
 - Package 
 - UseCase
