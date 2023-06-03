@@ -5,7 +5,7 @@
 ## Technologies
 
 **Project is created with**
-
+- 
 - Bootstrap: v5.3.0
 - PHP/8.1.10
 - PHP GD
