@@ -33,7 +33,7 @@ git clone https://github.com/petermuladi/cv-profile.git
 - **Start the web server and navigate to the project URL**
 - **Setting up Apache in XAMPP for Php router!!!**
 
-# I use XAMPP server :
+**I use XAMPP server :**
 
 ### Apache httpd.config (My settings : Xampp control panel/Config/Apache(httpd.conf))
 
