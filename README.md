@@ -59,7 +59,7 @@ Update **config.php** with your database credentials**
 extension=gd
 ```
 
-** 👍👍 After configuration Run the Project... **
+*** 👍👍 After configuration Run the Project... ***
 
 ## Usage
 
