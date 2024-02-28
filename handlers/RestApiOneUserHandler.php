@@ -14,11 +14,9 @@ abstract class RestApiOneUserHandler extends CoreController
 
             // If the user ID is not found, set an error message in the API response
             RestApiView::SetError("No registered API route found for ID: " . self::$apiUserId);
-            return;
         } else {
             // If the user ID is found, retrieve the user's data and set the response in the API
             RestApiController::restAction(self::$apiUserId);
-            return;
         }
     }
 }

@@ -8,7 +8,7 @@ abstract class ProfileController extends DashBoardController
        *
        * @return bool
        */
-      public static function ProfilandOtherImages():bool
+      public static function profilandOtherImages():bool
       {
           $userId = $_SESSION['userId'];
 

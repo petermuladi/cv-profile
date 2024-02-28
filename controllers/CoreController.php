@@ -12,7 +12,7 @@ abstract class CoreController
 
 
     //Default Init to protected property
-    public static function Init()
+    public static function init()
     {
 
         // Store the current URL and path
@@ -34,13 +34,13 @@ abstract class CoreController
 
 
     //Router static method
-    public static function Router()
+    public static function router()
     {
         // Get the HTTP method
         $method = $_SERVER["REQUEST_METHOD"];
 
-        //static property-s initialization
-        self::Init();
+        // static property-s initialization
+        self::init();
 
         
         // Define the routing table

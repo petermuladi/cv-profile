@@ -11,7 +11,7 @@ abstract class LoginDatabaseModel
     * @param mixed $password The user's password.
     * @return int|false The user ID if login is successful, false otherwise.
     */
-   public static function Login(mixed $mail, mixed $password)
+   public static function login(mixed $mail, mixed $password)
    {
       try {
          $con = DatabaseCon::getConnection();

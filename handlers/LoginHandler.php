@@ -13,8 +13,6 @@ abstract class LoginHandler extends CoreController
             header("Location: /dashboard");
         } else {
             LoginController::runBeforeAction();
-            return;
         }
     }
 } 
-?>

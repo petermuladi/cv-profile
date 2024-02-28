@@ -7,7 +7,6 @@ abstract class UpdateSchoolHandler extends CoreController
         // If the form data is valid and the modification is successful, redirect to the dashboard.
         if (SchoolController::ModifiedSchool()) {
             header("Location: /dashboard");
-            return;
         }
     }
 }

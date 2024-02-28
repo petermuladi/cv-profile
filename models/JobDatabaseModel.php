@@ -13,7 +13,7 @@ abstract class JobDatabaseModel
     @param int $userId The id of the user whose job records are being updated.
     @return bool Returns true if the update was successful, otherwise false.
     */
-    public static function UpdateJob(array $data, int $userId): bool
+    public static function updateJob(array $data, int $userId): bool
     {
         try {
 
@@ -88,7 +88,7 @@ abstract class JobDatabaseModel
     @param int $id The id of the user for whom new job records are being created.
     @return bool Returns true if the creation was successful, otherwise false.
     */
-    public static function CreateJob(array $data, int $id): bool
+    public static function createJob(array $data, int $id): bool
     {
         try {
             $con = DatabaseCon::getConnection();

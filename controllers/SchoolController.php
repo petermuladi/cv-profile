@@ -10,7 +10,7 @@ abstract class SchoolController extends DashBoardController
      *
      * @return bool
      */
-    public static function ModifiedSchool(): bool
+    public static function modifiedSchool(): bool
     {
         $userId = $_SESSION['userId'];
 
@@ -45,11 +45,11 @@ abstract class SchoolController extends DashBoardController
                 }
             }
             // Update existing schools
-            if (SchoolDatabaseModel::UpdateSchool($oldSchoolDataToDatabase, $userId)) {
+            if (SchoolDatabaseModel::updateSchool($oldSchoolDataToDatabase, $userId)) {
                 $_SESSION["update-profil"] = true;
             }
             // Create new schools
-            if (SchoolDatabaseModel::CreateSchool($newSchoolDataToDatabase, $userId)) {
+            if (SchoolDatabaseModel::createSchool($newSchoolDataToDatabase, $userId)) {
                 $_SESSION["update-profil"] = true;
             }
 

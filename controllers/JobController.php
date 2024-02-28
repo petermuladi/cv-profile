@@ -5,7 +5,7 @@ abstract class JobController extends DashBoardController
        * Method to modify the user's job data
        * @return bool Returns true if the job data was modified successfully, otherwise false.
        */
-      public static function ModifiedJob():bool
+      public static function modifiedJob():bool
       {
           $userId = $_SESSION["userId"];
 
@@ -21,6 +21,7 @@ abstract class JobController extends DashBoardController
   
                   // Process dynamically generated input data
                   if (strpos($key, "compname-") === 0) {
+                    
                       $id = substr($key, strlen("compname-"));
   
                       $newJobDataToDatabase[$i]['compname'] = htmlspecialchars($postJobData['compname-' . $id]);
@@ -46,14 +47,14 @@ abstract class JobController extends DashBoardController
               }
   
               // Update existing job data
-              if(JobDatabaseModel::UpdateJob($oldJobsDataToDatabase,$userId))
+              if(JobDatabaseModel::updateJob($oldJobsDataToDatabase,$userId))
               {
                   $_SESSION["update-profil"] = true;
   
               };
               
               // Create new job data
-               if(JobDatabaseModel::CreateJob($newJobDataToDatabase,$userId))
+               if(JobDatabaseModel::createJob($newJobDataToDatabase,$userId))
                {
                    $_SESSION["update-profil"] = true;
                };

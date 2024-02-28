@@ -26,7 +26,7 @@ abstract class ImageModel
      * @return array Returns an array with all processed images
      */
 
-    public static function ModifiedProfileAndSecondaryImages(array $profileImage, array $secondaryImages): array
+    public static function modifiedProfileAndSecondaryImages(array $profileImage, array $secondaryImages): array
     {
         // Reset the profile and all images arrays
         self::$profileImg = array();
@@ -70,19 +70,19 @@ abstract class ImageModel
         }
 
         // Process secondary images
-        $TransformSecondaryImages = self::TransformSecondaryImages($secondaryImages);
-        if (count($TransformSecondaryImages) <= 3) {
+        $transformSecondaryImages = self::transformSecondaryImages($secondaryImages);
+        if (count($transformSecondaryImages) <= 3) {
 
             $secondaryImagesArray = array();
 
             // Iterate over secondary images
-            foreach ($TransformSecondaryImages as $key => $name) {
+            foreach ($transformSecondaryImages as $key => $name) {
 
                 // Check if image is not empty or null
                 if (!empty($name) && isset($name)) {
 
-                    $errCheck = $TransformSecondaryImages[$key]["error"];
-                    $tmpCheck = $TransformSecondaryImages[$key]["tmp_name"];
+                    $errCheck = $transformSecondaryImages[$key]["error"];
+                    $tmpCheck = $transformSecondaryImages[$key]["tmp_name"];
 
                     // Check if image is uploaded
                     if (isset($tmpCheck) && is_uploaded_file($tmpCheck)) {
@@ -142,7 +142,7 @@ abstract class ImageModel
     //into an array of individual images.
     // It takes an array of $secondaryImages as input and loops through 
     //each individual image array.
-    public static function TransformSecondaryImages(array $secondaryImages): array
+    public static function transformSecondaryImages(array $secondaryImages): array
     {
 
         $imgs = [];

@@ -2,9 +2,8 @@
 // This class is an abstract model for handling profile data in the database
 abstract class DashboardProfilDataDatabaseModel
 {
-
    // This method updates the profile data for the given user id with the provided data
-   public static function UpdateProfileData(array $data, int $id)
+   public static function updateProfileData(array $data, int $id)
    {
       try {
          // Get a database connection

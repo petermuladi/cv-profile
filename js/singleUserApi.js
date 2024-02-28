@@ -35,9 +35,8 @@ async function fetchById(idFromUser) {
    }
 }
 
-
 //Render function to display user data on the webpage
-async function Render() {
+async function render() {
 
    //get the user ID from the HTML
    const userId = document.getElementsByClassName("container")[0].id;
@@ -234,5 +233,5 @@ async function Render() {
     `;
    document.getElementById(userId).innerHTML = html;
 }
-window.onload = Render();
+window.onload = render();
 

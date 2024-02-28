@@ -98,7 +98,6 @@ if (document.getElementById("addInputField")) {
    });
 
 }
-
 else {
    "";
 }

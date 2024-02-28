@@ -6,7 +6,7 @@ abstract class ImageDatabaseModel
 {
    // Save all images to database for a given user ID and an array of image data
    // Returns true if all images are saved successfully, false otherwise
-   public static function SaveAllImages(int $id, array $imgsData): bool
+   public static function saveAllImages(int $id, array $imgsData): bool
    {
 
       try {
@@ -51,7 +51,7 @@ abstract class ImageDatabaseModel
 
    // Delete primary image for a given user ID
    // Returns true if the primary image is deleted successfully, false otherwise
-   public static function DeletePrimaryImage(int $id): bool
+   public static function deletePrimaryImage(int $id): bool
    {
 
       try {
@@ -65,7 +65,6 @@ abstract class ImageDatabaseModel
 
             $deleteQuery = "DELETE FROM `kepek` WHERE `felhasznalo_id`=$userid AND `fokep`= 1 ";
             $con->query($deleteQuery);
-
 
             $filepath = $result[0]["eleresi_ut"];
 
@@ -86,9 +85,8 @@ abstract class ImageDatabaseModel
 
    // Delete all secondary images for a given user ID
    // Returns true if all secondary images are deleted successfully, false otherwise
-   public static function DeleteSecondaryImages(int $id): bool
+   public static function deleteSecondaryImages(int $id): bool
    {
-
       try {
          $con = DatabaseCon::getConnection();
          $userid = $con->real_escape_string($id);

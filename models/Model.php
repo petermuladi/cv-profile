@@ -3,7 +3,7 @@
 //all data from a table based on a specific ID value
 abstract class Model
 {
-   public static function FetchByIdAllDataFromTable(string $idname, int $id, string $table): array
+   public static function fetchByIdAllDataFromTable(string $idname, int $id, string $table): array
    {
 
       try {

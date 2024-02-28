@@ -11,7 +11,6 @@ abstract class HomeHandler extends CoreController
         // Otherwise, show the home page
         else {
             HomeController::defaultAction();
-            return;
         }
     }
 }

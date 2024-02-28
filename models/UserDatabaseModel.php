@@ -8,7 +8,7 @@ abstract class UserDatabaseModel
      *
      * @return int The last inserted ID.
      */
-    public static function LastInsertId(): int
+    public static function lastInsertId(): int
     {
         try {
             $con = DatabaseCon::getConnection();
@@ -26,7 +26,7 @@ abstract class UserDatabaseModel
      *
      * @return array An array of user IDs.
      */
-    public static function FetchAllUserId(): array
+    public static function fetchAllUserId(): array
     {
 
         try {
@@ -54,7 +54,7 @@ abstract class UserDatabaseModel
      * @param int $userId The ID of the user to retrieve data for.
      * @return array An array of all data for the user.
      */
-    public static function FetchOneUserByIdAllData(int $userId): array
+    public static function fetchOneUserByIdAllData(int $userId): array
     {
 
         try {
@@ -90,7 +90,6 @@ abstract class UserDatabaseModel
             $result = $res->fetch_all(MYSQLI_ASSOC);
             $res->free_result();
 
-
             $userAllData =
                 [
                     "profil" => $result,
@@ -113,10 +112,9 @@ abstract class UserDatabaseModel
      *
      * @return array An array of user data.
      */
-    public static function FetchAllUserEmailNamePhoneAndPrimaryImage(): array
+    public static function fetchAllUserEmailNamePhoneAndPrimaryImage(): array
     {
         try {
-
 
             $con = DatabaseCon::getConnection();
             $data = [];

@@ -6,7 +6,6 @@ abstract class ModifiedProfileHandler extends CoreController
     {
         if (ProfileController::ProfilandOtherImages()) {
             header("Location: /dashboard"); // redirect to the dashboard page after successful modification
-            return;
         }
     }
 }

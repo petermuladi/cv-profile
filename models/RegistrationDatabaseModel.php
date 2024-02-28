@@ -6,7 +6,7 @@ Inserts a new user registration data into the database
 */
 abstract class RegistrationDatabaseModel
 {
-   public static function Registration(array $data)
+   public static function registration(array $data)
    {
       $con = DatabaseCon::getConnection();
 

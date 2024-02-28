@@ -10,7 +10,7 @@ abstract class SignUpController
     }
 
     //Handle registration form submission
-    public static function RegistrateAction():bool
+    public static function registrateAction():bool
     {
       
         try {

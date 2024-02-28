@@ -16,11 +16,9 @@ abstract class OneUserHandler extends CoreController
         // If the user ID is not in the list of all IDs, show a 404 page.
         if (!in_array($id["singleUserId"], $allIdInt)) {
             PageNotFoundController::defaultAction();
-            return;
         } else {
             // Show the single user page.
             SingleUserController::defaultAction($id);
-            return;
         }
 
     }

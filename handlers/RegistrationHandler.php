@@ -8,6 +8,5 @@ abstract class RegistrationHandler extends CoreController
     public static function POST()
     {
         SignUpController::RegistrateAction();
-        return;
     }
 }

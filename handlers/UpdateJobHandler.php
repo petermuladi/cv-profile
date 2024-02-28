@@ -13,8 +13,6 @@ abstract class UpdateJobHandler extends CoreController
     {
         if (JobController::ModifiedJob()) {
             header("Location: /dashboard");
-            return;
         }
     }
 }
-

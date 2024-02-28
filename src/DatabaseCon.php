@@ -17,7 +17,7 @@ abstract class DatabaseCon
 
 
     //Connection to Database
-    public static function Connect()
+    public static function connect()
     {
         global $cfg;
         $driver = new mysqli_driver();
@@ -34,7 +34,7 @@ abstract class DatabaseCon
     }
 
     //Disconnect Database
-    public static function Disconnect()
+    public static function disconnect()
     {
         try {
             self::$connection->close();

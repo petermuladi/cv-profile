@@ -5,7 +5,7 @@ abstract class GDImageProcessor
     // It first checks the MIME type of the image to create the appropriate image object.
     // Then, it calculates the new dimensions of the image and creates a new canvas with those dimensions.
     // Finally, it copies the original image onto the new canvas and saves the new image.
-    public static function ImageProcessing(string $file, int $x = null, int $y = null)
+    public static function imageProcessing(string $file, int $x = null, int $y = null)
     {
 
         $mime = finfo_file(finfo_open(FILEINFO_MIME_TYPE), $file);

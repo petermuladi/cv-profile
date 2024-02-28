@@ -2,7 +2,7 @@
 abstract class ImageFilesController
 {
     // This function processes the images received from the user and saves them to the database
-    public static function ImageFilesProcess(array $imgs, int $userId)
+    public static function imageFilesProcess(array $imgs, int $userId)
     {
         $secondaryImages = [];
         $primaryImage = [];

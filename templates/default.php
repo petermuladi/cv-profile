@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,15 +10,14 @@
     <link rel="stylesheet" href="../style/css/bootstrap.min.css">
     <link rel="icon" type="jpg" href="./images/favicon.jpg">
 </head>
+
 <body>
-   <!--DEFAULT layout Wrapper-->
-    <?php include("templates/navbar.php") ?>
-    <!--SubTemplate-->
-    <?php include("templates/$template.php") ?>
-    <script src="../style/js/jquery-3.6.3.js"></script>
+    <!--DEFAULT layout Wrapper--> <?php include("templates/navbar.php") ?>
+    <!--SubTemplate--> <?php include("templates/$template.php") ?> <script src="../style/js/jquery-3.6.3.js"></script>
     <script src="../style/js/popper.min.js"></script>
     <script src="../style/js/bootstrap.min.js"></script>
     <script src="../style/js/bootstrap.min.js.map"></script>
     <script src="../style/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

@@ -11,13 +11,13 @@ abstract class LoginController
 
     // This function logs the user in by verifying the email and password
     // against the database.
-    public static function Login()
+    public static function login()
     {
         $mail = htmlspecialchars($_POST["email"]);
         $pass = hash("sha256", htmlspecialchars($_POST["password"]));
 
         // If the email and password are correct, log the user in.
-        if (LoginDatabaseModel::Login($mail, $pass)) {
+        if (LoginDatabaseModel::login($mail, $pass)) {
             $_SESSION["logged-in"] = true;
             $_SESSION["userId"] = LoginDatabaseModel::Login($mail,$pass);
 

@@ -3,7 +3,6 @@ abstract class LogOutHandler extends CoreController
 {
     public static function POST()
     {
-        Logout::Logout();
-        return;
+        Logout::logout();
     }
 }

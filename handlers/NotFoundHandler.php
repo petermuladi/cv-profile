@@ -5,6 +5,5 @@ abstract class NotFoundHandler extends CoreController
    public static function GET()
    {
     PageNotFoundController::defaultAction();
-    return;
    }
 }

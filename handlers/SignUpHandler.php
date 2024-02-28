@@ -4,7 +4,6 @@ abstract class SignUpHandler extends CoreController
     // Render the default signup page
     public static function GET()
     {
-
         try {
             if (LoggedIn::isLoggedIn()) {
                 header("Location: /dashboard");

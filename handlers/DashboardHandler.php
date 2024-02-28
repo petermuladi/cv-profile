@@ -5,6 +5,5 @@ abstract class DashboardHandler extends CoreController
     public static function GET()
     {
         DashboardController::defaultAction();
-        return;
     }
 }

@@ -9,7 +9,7 @@ abstract class SchoolDatabaseModel
     * @param int $userId The ID of the user whose school-related data will be updated.
     * @return bool Returns true if the update was successful, false otherwise.
     */
-   public static function UpdateSchool(array $data, int $userId): bool
+   public static function updateSchool(array $data, int $userId): bool
    {
       try {
 
@@ -85,7 +85,7 @@ abstract class SchoolDatabaseModel
     * @param int $id The ID of the user for whom the school-related data will be created.
     * @return bool Returns true if the creation was successful, false otherwise.
     */
-   public static function CreateSchool(array $data, int $id): bool
+   public static function createSchool(array $data, int $id): bool
    {
       try {
          $con = DatabaseCon::getConnection();
