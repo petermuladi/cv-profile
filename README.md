@@ -51,7 +51,7 @@ git clone https://github.com/petermuladi/cv-profile.git
 ```
 <br>
 
-**When you run schema.sql file, and created youer database <br> 
+**When you run schema.sql file, and created your database <br> 
 Update **config.php** with your database credentials**
 
 **Enable GD Image in php.ini**
