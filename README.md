@@ -1,11 +1,11 @@
-## 🚀CV Profile
+# 🚀CV Profile
 
 #### The "CV-Profile" is a PHP web application that aims to provide a user interface for job seekers to create and publish their own online CV profiles after registration. The primary objective of the application is to assist job seekers during their job search by allowing them to share their online profile link with potential employers, and update their profiles or photos anytime they need. Additionally, the application provides a common platform that connects job seekers and employers, and allows job seekers to network and exchange experiences or information.
 
 ## Technologies
 
 **Project is created with**
-
+- 
 - Bootstrap: v5.3.0
 - PHP/8.1.10
 - PHP GD
@@ -28,10 +28,38 @@ The application includes robust error handling to catch and display any errors t
 git clone https://github.com/petermuladi/cv-profile.git
 ```
 
-- Set up a web server with PHP support (e.g. Apache, Nginx)
-- Create a database and import the SQL schema from **schema.sql**
-- Update **config.php** with your database credentials
-- Start the web server and navigate to the project URL
+- **Set up a web server with PHP support (e.g. Apache, Nginx)**
+- **Create a database (I use MySQL) and import the SQL schema from schema.sql**
+- **Start the web server and navigate to the project URL**
+- **Setting up Apache in XAMPP for Php router!!!**
+
+**I use XAMPP server :**
+
+**Configuration :**
+
+**Apache httpd.config file (Xampp control panel/Config/Apache(httpd.conf))**
+<br>
+**copy paste this in to the httpd.conf file :**
+<br><br>
+
+```bash
+  Listen 3030
+<VirtualHost \*:3030>
+  DocumentRoot "C:\XAMPP\htdocs\cv-profile"
+  ServerName localhost:3030
+</VirtualHost>
+```
+<br>
+
+**When you run schema.sql file, and created youer database <br> 
+Update **config.php** with your database credentials**
+
+**Enable GD Image in php.ini**
+```bash
+extension=gd
+```
+
+*** 👍👍 After configuration Run the Project... ***
 
 ## Usage
 
@@ -64,17 +92,8 @@ git clone https://github.com/petermuladi/cv-profile.git
 -	phpMyAdmin 5.2.0
 -	MariaDB 10.4.25
 
-## Setting up Apache in XAMPP for Php router
-
-### Apache httpd.config (My settings)
-
-- Listen 3030
-- <VirtualHost \*:3030>
-  DocumentRoot "C:\XAMPP\htdocs\cv-profile"
-  ServerName localhost:3030 </VirtualHost>
-
 ## Documentation
-- **Find in** -> **uml-diagrams** -> **📊UML diagrams**
+- **Find in** -> **uml-diagrams** folder -> **📊UML diagrams**
 - Deployment 
 - Package 
 - UseCase
