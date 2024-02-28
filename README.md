@@ -35,7 +35,9 @@ git clone https://github.com/petermuladi/cv-profile.git
 
 **I use XAMPP server :**
 
-**Apache httpd.config (My settings : Xampp control panel/Config/Apache(httpd.conf))**
+**Configuration :**
+
+**Apache httpd.config file (Xampp control panel/Config/Apache(httpd.conf))**
 <br>
 **copy paste this in to the httpd.conf file :**
 <br><br>
@@ -51,6 +53,11 @@ git clone https://github.com/petermuladi/cv-profile.git
 
 **When you run schema.sql file, and created youer database <br> 
 Update **config.php** with your database credentials**
+
+**Enable GD Image in php.ini**
+```bash
+extension=gd
+```
 
 ## Usage
 
