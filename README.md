@@ -29,15 +29,15 @@ git clone https://github.com/petermuladi/cv-profile.git
 ```
 
 - **Set up a web server with PHP support (e.g. Apache, Nginx)**
-- **Create a database (I use MySQL) and import the SQL schema from **schema.sql**
+- **Create a database (I use MySQL) and import the SQL schema from schema.sql**
 - **Start the web server and navigate to the project URL**
 - **Setting up Apache in XAMPP for Php router!!!**
 
 **I use XAMPP server :**
 
-### Apache httpd.config (My settings : Xampp control panel/Config/Apache(httpd.conf))
-
-*copy paste this in to the httpd.conf file :*
+**Apache httpd.config (My settings : Xampp control panel/Config/Apache(httpd.conf))**
+<br>
+**copy paste this in to the httpd.conf file :**
 <br><br>
 
 ```bash
