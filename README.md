@@ -28,10 +28,29 @@ The application includes robust error handling to catch and display any errors t
 git clone https://github.com/petermuladi/cv-profile.git
 ```
 
-- Set up a web server with PHP support (e.g. Apache, Nginx)
-- Create a database and import the SQL schema from **schema.sql**
-- Update **config.php** with your database credentials
-- Start the web server and navigate to the project URL
+- **Set up a web server with PHP support (e.g. Apache, Nginx)**
+- **Create a database (I use MySQL) and import the SQL schema from **schema.sql**
+- **Start the web server and navigate to the project URL**
+- **Setting up Apache in XAMPP for Php router!!!**
+
+# I use XAMPP server :
+
+### Apache httpd.config (My settings : Xampp control panel/Config/Apache(httpd.conf))
+
+*copy paste this in to the httpd.conf file :*
+<br><br>
+
+```bash
+  Listen 3030
+<VirtualHost \*:3030>
+  DocumentRoot "C:\XAMPP\htdocs\cv-profile"
+  ServerName localhost:3030
+</VirtualHost>
+```
+<br>
+
+**When you run schema.sql file, and created youer database <br> 
+Update **config.php** with your database credentials**
 
 ## Usage
 
@@ -63,15 +82,6 @@ git clone https://github.com/petermuladi/cv-profile.git
 -	MySQL 15.1
 -	phpMyAdmin 5.2.0
 -	MariaDB 10.4.25
-
-## Setting up Apache in XAMPP for Php router
-
-### Apache httpd.config (My settings)
-
-- Listen 3030
-- <VirtualHost \*:3030>
-  DocumentRoot "C:\XAMPP\htdocs\cv-profile"
-  ServerName localhost:3030 </VirtualHost>
 
 ## Documentation
 - **Find in** -> **uml-diagrams** folder -> **📊UML diagrams**
