@@ -1,6 +1,6 @@
 # 🚀CV Profile App
 
-#### The "CV-Profile" is a PHP web application that aims to provide a user interface for job seekers to create and publish their own online CV profiles after registration. The primary objective of the application is to assist job seekers during their job search by allowing them to share their online profile link with potential employers, and update their profiles or photos anytime they need. Additionally, the application provides a common platform that connects job seekers and employers, and allows job seekers to network and exchange experiences or information.
+#### The "CV Profile App" is a PHP web application that aims to provide a user interface for job seekers to create and publish their own online CV profiles after registration. The primary objective of the application is to assist job seekers during their job search by allowing them to share their online profile link with potential employers, and update their profiles or photos anytime they need. Additionally, the application provides a common platform that connects job seekers and employers, and allows job seekers to network and exchange experiences or information.
 
 ## Technologies
 
